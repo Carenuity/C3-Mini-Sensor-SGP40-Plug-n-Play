@@ -1,4 +1,11 @@
 # C3-Mini-Sensor-SGP40-Plug-n-Play
+
+
+| Front View | Back View |
+| :---: | :---: |
+| ![GY-SGP40 Adapter Front View](./GY-SGP40%20Adapter%20Front%20View.png) | ![GY-SGP40 Adapter Back View](./GY-SGP40%20Adapter%20Back%20View.png) |
+
+
 Carenuity ecosystem plug-and-play adapter for the SGP40 Air Quality Sensor module.
 
 
@@ -6,9 +13,9 @@ Carenuity ecosystem plug-and-play adapter for the SGP40 Air Quality Sensor modul
 
 The SGP40 is a digital metal-oxide (MOx) gas sensor made by Sensirion for measuring volatile organic compounds (VOCs) in indoor air quality applications.
 
-This PCB allows easy integration of the SGP40 VOC sensor into development platforms such as ESP8266 (D1 Mini), C3 Mini, and similar 3.3V microcontroller systems. The adapter carries a GY-SGP40 sensor module.
+This PCB allows easy integration of the SGP40 VOC sensor into development platforms such as ESP8266 (D1 Mini), C3 Mini, and similar 3.3V microcontroller systems. 
 
-It carries a GY-SGP40 sensor module and plugs directly into the Carenuity headers, enabling rapid integration into IoT devices and environmental monitoring systems.
+The adapter carries a GY-SGP40 sensor module and plugs directly into the Carenuity headers, enabling rapid integration into IoT devices and environmental monitoring systems.
 
 # Sensor Features
 - VOC index output (0 to 500)
@@ -46,9 +53,10 @@ It carries a GY-SGP40 sensor module and plugs directly into the Carenuity header
 | GND | GND  | GND  |
 
 # File schematics
-
+[GY-SGP40 Adapter Schematic](./GY-SGP40%20Adapter%20Schematic.pdf)
 # Example usage 
-SGP40 adapter with a C3 Mini and a 0.96" OLED showing a live VOC Index reading.
+SGP40 adapter with a C3 Mini and a 0.96" OLED showing a live VOC Index reading. 
+
 
 # Applications 
 - Indoor air monitoring
