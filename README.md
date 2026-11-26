@@ -6,7 +6,7 @@
 | ![GY-SGP40 Adapter Front View](./GY-SGP40%20Adapter%20Front%20View.png) | ![GY-SGP40 Adapter Back View](./GY-SGP40%20Adapter%20Back%20View.png) |
 
 
-Carenuity ecosystem plug-and-play adapter for the SGP40 Air Quality Sensor module.
+Carenuity plug-and-play adapter for the SGP40 Air Quality Sensor module.
 
 
 # Overview
@@ -17,21 +17,15 @@ This PCB allows easy integration of the SGP40 VOC sensor into development platfo
 
 The adapter carries a GY-SGP40 sensor module and plugs directly into the Carenuity headers, enabling rapid integration into IoT devices and environmental monitoring systems.
 
-# Sensor Features
-- VOC index output (0 to 500)
-- I²C communication
-- Default I²C address `0x59`
-- Low power consumption
-- 3.3V operation
-
-# Electrical Specifications 
+# Specifications 
 
 | Parameter | Value |
 | :--- | :--- |
-| Operating Voltage | 3.3V |
-| Communication | I2C |
-| Logic Level | 3.3V |
-| I2C Address | Fixed `0x59`  |
+| Sensor | Sensirion SGP40 (GY-SGP40 module) |
+| Output | 	VOC Index (0 to 500) |
+| Interface | 	I²C, fixed address 0x59 |
+| Supply and logic level | 3.3V |
+| Compatible boards | ESP8266 (D1 Mini), ESP32-C3 Mini, other 3.3V boards  |
 | PCB Version | V1.2 |
 
 # SGP40 Sensor Module Pins
@@ -54,8 +48,10 @@ The adapter carries a GY-SGP40 sensor module and plugs directly into the Carenui
 
 # File schematics
 [GY-SGP40 Adapter Schematic](./GY-SGP40%20Adapter%20Schematic.pdf)
+
 # Example usage 
-SGP40 adapter with a C3 Mini and a 0.96" OLED showing a live VOC Index reading. 
+SGP40 adapter with a C3 Mini and a 0.96" OLED showing a live VOC Index reading.
+![SGP40 adapter with a C3 Mini and a 0.96" OLED showing a live VOC Index reading](./SGP40%20C3%20Mini%20OLED%20Display%20Example.jpeg)
 
 
 # Applications 
@@ -66,9 +62,11 @@ SGP40 adapter with a C3 Mini and a 0.96" OLED showing a live VOC Index reading.
 - Smart home systems
 
 # Sensirion support files
-[Sensirion SGP40 Product Page and Datasheet](https://sensirion.com/media/documents/296373BB/6203C5DF/Sensirion_Gas_Sensors_Datasheet_SGP40.pdf)
+[Sensirion SGP40 Datasheet](https://sensirion.com/media/documents/296373BB/6203C5DF/Sensirion_Gas_Sensors_Datasheet_SGP40.pdf)
 
 # Example code 
+
+
 
 
 
