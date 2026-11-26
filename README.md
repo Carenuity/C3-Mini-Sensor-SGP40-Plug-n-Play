@@ -1,2 +1,3 @@
 # C3-Mini-Sensor-SGP40-Plug-n-Play
-Plug-and-play SGP40 VOC air quality sensor adapter for ESP32-C3-Mini, ESP8266 (D1 Mini) and other 3.3V microcontroller boards. I2C, no wiring. Includes schematic, 3D board renders and example Arduino firmware.
+Carenuity ecosystem plug-and-play adapter for the SGP40 Air Quality Sensor module.
+This PCB allows easy integration of the SGP40 VOC sensor into development platforms such as ESP8266 (D1 Mini), C3 Mini, and similar 3.3V microcontroller systems. The adapter carries a GY-SGP40 sensor module.
