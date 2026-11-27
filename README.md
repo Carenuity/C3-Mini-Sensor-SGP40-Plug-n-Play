@@ -64,7 +64,43 @@ SGP40 adapter with a C3 Mini and a 0.96" OLED showing a live VOC Index reading.
 # Sensirion support files
 [Sensirion SGP40 Datasheet](https://sensirion.com/media/documents/296373BB/6203C5DF/Sensirion_Gas_Sensors_Datasheet_SGP40.pdf)
 
+## License
+[MIT License](./LICENSE)
+
 # Example code 
+```cpp
+#include <Wire.h>
+#include <Adafruit_SGP40.h>
+
+#define SDA_PIN 8    // GPIO8
+#define SCL_PIN 10   // GPIO10
+
+Adafruit_SGP40 sgp;
+
+void setup()
+{
+    Serial.begin(115200);
+    Wire.begin(SDA_PIN, SCL_PIN);
+
+    if (!sgp.begin())
+    {
+        Serial.println("SGP40 sensor not found");
+        while (1) delay(10);
+    }
+}
+
+void loop()
+{
+    // Fixed compensation values: 25 C and 50 %RH
+    int32_t voc = sgp.measureVocIndex(25, 50);
+
+    Serial.print("VOC Index: ");
+    Serial.println(voc);
+
+    delay(1000);
+}
+```
+
 
 
 
